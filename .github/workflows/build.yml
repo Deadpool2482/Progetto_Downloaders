@@ -10,8 +10,9 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      # ECCO LA CORREZIONE: Ho tolto "-main" dal nome e messo la versione corretta
       - name: Free Disk Space
-        uses: jlumbroso/free-disk-space-main@v1
+        uses: jlumbroso/free-disk-space@v1.3.1
         with:
           tool-cache: true
           android: true
